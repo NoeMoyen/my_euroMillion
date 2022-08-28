@@ -125,9 +125,7 @@ void EuroMillion::checkIfWin(int tirageNumber)
             checkDoublonNumber();
             generateStar();
             checkDoublonStar();
-
             generateTirage();
-
             if (this->_number == this->_tirageNumber && this->_star == this->_tirageStar) {
                 std::cout << "YOU WIN IN\t" << count << "\t\tTIRAGES !!!" << std::endl;
                 this->_moyenne.push_back(count);
@@ -146,6 +144,18 @@ void EuroMillion::checkIfWin(int tirageNumber)
                 count = 0;
                 break;
             }
+            if (count == 10000000)
+                std::cout << "10M try...\n";
+            if (count == 30000000)
+                std::cout << "30M try....\n";
+            if (count == 60000000)
+                std::cout << "60M try...\n";
+            if (count == 90000000)
+                std::cout << "90M try...\n";
+            if (count == 1200000000)
+                std::cout << "120M try...\n";
+            if (count == 150000000)
+                std::cout << "150M try...\n";
             count++;
         }
     }

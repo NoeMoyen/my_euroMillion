@@ -1,3 +1,9 @@
+## Goal
+
+simple script in c++ that generate a random euromillion ticket, 
+create a random tirrage, and if the tirrage and the ticket are equal, print the number of try.
+
+
 ## CMake starter
 
 Minimal CMake example, the only dependency is cmake
@@ -6,18 +12,19 @@ Project structure
 
 ```sh
 ├── CMakeLists.txt
+├── my_euroMillion
 ├── build
 │   ├── ...
 │   ├── Makefile
 │   ├── bin
-│   │   └── runner
+│   │   └── my_euroMillion
 │   └── lib
 │       └── libWorld.dylib
 ├── include
 │   └── project
-│       └── World.hpp
+│       └── euroMillion.hpp
 └── src
-    ├── World.cpp
+    ├── euroMillion.cpp
     └── main.cpp
 ```
 
@@ -31,11 +38,7 @@ mkdir build
 cd build
 cmake ..
 make
-./bin/runner
+cd ..
+./my_euroMillion
 ```
-
-### Inspiration
-
-- https://github.com/Barthelemy/CppProjectTemplate
-- http://stackoverflow.com/questions/13521618/c-project-organisation-with-gtest-cmake-and-doxygen
 
