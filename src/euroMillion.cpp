@@ -149,13 +149,13 @@ void EuroMillion::checkIfWin(int tirageNumber)
             if (count == 30000000)
                 std::cout << "30M try....\n";
             if (count == 60000000)
-                std::cout << "60M try...\n";
+                std::cout << "60M try.....\n";
             if (count == 90000000)
-                std::cout << "90M try...\n";
+                std::cout << "90M try......\n";
             if (count == 1200000000)
-                std::cout << "120M try...\n";
+                std::cout << "120M try......\n";
             if (count == 150000000)
-                std::cout << "150M try...\n";
+                std::cout << "150M try.......\n";
             count++;
         }
     }
@@ -165,5 +165,4 @@ void EuroMillion::checkIfWin(int tirageNumber)
     }
     sum = sum / this->_moyenne.size();
     std::cout << "Moyenne: " << sum << std::endl;
-
 }
