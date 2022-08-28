@@ -39,6 +39,6 @@ cd build
 cmake ..
 make
 cd ..
-./my_euroMillion
+./my_euroMillion number_of_try
 ```
 
